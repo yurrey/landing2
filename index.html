@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- arabic font -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;900&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <!-- resposive -->
+    <link rel="stylesheet" href="resposive.css">
+
+
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>landing</title>
+</head>
+<body>
+    <main>
+        <section class="pdctpre">
+                <div class="pdctmain">
+                    <img src="images/main.png" alt="" class='mainimage'>
+                </div>
+                
+                <div class="pdcdetails">
+                    <div class="pdctimages">
+                        <div class="img1 active img" img-data='images/main.png'></div>
+                        <div class="img2 img" img-data='images/img2.png'></div>
+                     </div>
+                    <div class="pdctname">
+                        <h1>اسم المنتج</h1>
+                    </div>
+                    <div class="pdctshortdescription">
+                        <p>
+                            وصف قصير للمنتج وصف قصير للمنتج وصف قصير للمنتج وصف قصير للمنتج وصف قصير للمنتج وصف قصير للمنتج 
+                        </p>
+                    </div>
+
+                    <div class="pdctprice">
+                        <h1 id="price">199DH</h1><p>250DH</p>
+                    </div>
+                    
+                    <div class="qtty">
+                      <button class="plus">+</button>
+                      <span class="value">1</span>
+                      <button class="minus" disabled>-</button>
+                    </div>
+               
+                    <div class="total">
+                      <h2>
+                        <span class="discountprice"></span>
+                      </h2>
+                      <h2 >
+                        <span class='totalprice'></span></h2>
+                    </div>
+                    <div id="paypal-button-container"></div>
+                    
+                </div>
+
+        </section>
+
+
+        <section class="pdctdesc">
+            <div class="tabscontainer">
+                <div class="accordion-tabs">
+                    <button class="accordion-tab accordion-active" data-actab-group="0" data-actab-id="0">الوصف</button>
+                    <button class="accordion-tab" data-actab-group="0" data-actab-id="1">الشحن</button>
+                    <button class="accordion-tab" data-actab-group="0" data-actab-id="2">ارجاع المنتج</button>
+                    <button class="accordion-tab" data-actab-group="0" data-actab-id="3">Tab 4</button>
+                </div>
+                <div class="accordion-content">
+                    <article class="accordion-item accordion-active" data-actab-group="0" data-actab-id="0">
+                      <h4 class="accordion-item__label">الوصف</h4>
+                      <div class="accordion-item__container">
+                        <p>هنا يتم وضع وصف دقيق للمنج باستعمال هذه الخانةهنا يتم وضع وصف دقيق للمنج باستعمال هذه الخانةهنا يتم وضع وصف دقيق للمنج باستعمال هذه الخانةهنا يتم وضع وصف دقيق للمنج باستعمال هذه الخانةهنا يتم وضع وصف دقيق للمنج باستعمال هذه الخانةهنا يتم وضع وصف دقيق للمنج باستعمال هذه الخانةهنا يتم وضع وصف دقيق للمنج باستعمال هذه الخانة</p>
+                      </div>
+                    </article>
+                    <article class="accordion-item" data-actab-group="0" data-actab-id="1">
+                      <h4 class="accordion-item__label">الشحن</h4>
+                      <div class="accordion-item__container">
+                        <p>معلومات عن العلبة و الشحن وما الى ذلكمعلومات عن العلبة و الشحن وما الى ذلكمعلومات عن العلبة و الشحن وما الى ذلكمعلومات عن العلبة و الشحن وما الى ذلكمعلومات عن العلبة و الشحن وما الى ذلكمعلومات عن العلبة و الشحن وما الى ذلكمعلومات عن العلبة و الشحن وما الى ذلكمعلومات عن العلبة و الشحن وما الى ذلك</p>
+                      </div>
+                    </article>
+                    <article class="accordion-item" data-actab-group="0" data-actab-id="2">
+                      <h4 class="accordion-item__label">ارجاع المنتج</h4>
+                      <div class="accordion-item__container">
+                        <p>ارجاع المنتج ارجاع المنتج ارجاع المنتج ارجاع المنتج ارجاع المنتج ارجاع المنتج ارجاع المنتج ارجاع المنتج ارجاع المنتج ارجاع المنتج </p>
+                      </div>
+                    </article>
+                    <article class="accordion-item" data-actab-group="0" data-actab-id="3">
+                      <h4 class="accordion-item__label">خانة اخرى</h4>
+                      <div class="accordion-item__container">
+                        <p>اضافة خانة اضافية اضافة خانة اضافية اضافة خانة اضافية اضافة خانة اضافية اضافة خانة اضافية اضافة خانة اضافية </p>
+                      </div>
+                    </article>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="form" id="form">
+                <div class="countdownholder">
+                    <h1> عرض لمدة :</h1>
+                    <div class="countdown">
+                    </div>
+                </div>
+                <form action="thanks.html">
+                   
+                    <div class="form-group">
+                        <label for="
+                        ">اختر عرضا:</label>
+                        <select class="form-control" name='offer' id="offer" >
+                            <option value="0">----------</option>
+                          <option value="1">منتج واحد199DH</option>
+                          <option value="2">منتجان 370DH</option>
+                          <option value="3">3 منتجات 539DH</option>
+                          
+                        </select>
+                    </div>
+                    <div class="namecontrol">
+                        <input type="text" name="name" id="name" placeholder="الاسم"  autocomplete="off">
+                        <i class="fa check" id='checkinputname'></i>
+                    </div>
+                    
+                    <div class="phonecontrol">
+                        <input type="tel" onkeypress="return onlyNumberKey(event)" name="phone" id="phone" placeholder="الهاتف (06/07...)"  autocomplete="off">
+                        <i class="fa check" id='checkinputphone'></i>
+                    </div>
+                    
+                    <div class="emailcontrol">
+                        <input type="email" name="email" id="email" placeholder="البريد الالكتروني"  autocomplete="off">
+                        <i class="fa check" id='checkinputemail'></i>
+                        <input type="submit" style="display: none;">
+                    </div>
+                    
+                    
+                    
+                </form>
+               
+                <div class="btns">
+                    <button id="submit"  disabled>ارسال <span></span></button>
+                </div>
+            
+        </section>
+    </main>
+
+    
+    <script src="https://www.paypal.com/sdk/js?client-id=AepQa4lfhgOHhNKSIM53mPtRaYUDlLwhVXW4LaalPZxf16jyutTrgPVLTemNKN6eJ1ZrTr7iUVzMHyR-"></script>
+    <script>paypal.Buttons().render('#paypal-button-container');</script> 
+    
+    <script src="app.js"></script>
+    <script src="gibberish.js"></script>
+</body>
+</html>
+
+
