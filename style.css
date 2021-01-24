@@ -1,0 +1,579 @@
+:root{
+    --dark : #1B1B1B;
+    --red: #CF052D;
+    --colorsign: white;
+
+}
+
+
+*{
+    text-align: right;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.form-control {
+    border: 3px solid red;
+    background: black;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+
+
+/*scroll bar from w3schools*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+/*------------*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+a:hover{
+    transform: translateZ(8px);
+}
+body{
+    font-family: 'Tajawal', sans-serif;
+    background: #1B1B1B;
+}
+
+main{
+    
+    color: white;
+
+}
+
+section{
+    padding: 10px;
+}
+
+/*1st section*/
+.pdctpre{
+    padding: 5px;
+    display: flex;
+}
+.pdctmain{
+    text-align: center;
+    margin: auto;
+}
+
+
+.pdctimages{
+    display: flex;
+    
+}
+
+.pdctimages div{
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+}
+
+.pdctimages .active{
+    border: 1px solid #CF052D;
+}
+
+.img1{
+    background: url(images/main.png), linear-gradient(0deg, rgba(19, 19, 19, 0.9), rgba(19, 19, 19, 0.9)),url(images/img1.png);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.img2{
+    background: url(images/img2.png), linear-gradient(0deg, rgba(19, 19, 19, 0.9), rgba(19, 19, 19, 0.9)),url(images/img1.png);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.pdcdetails div h1, .pdcdetails div p, .pdcdetails div span{
+    text-transform: uppercase;
+}
+
+
+.pdcdetails{
+    flex: 1;
+    margin-top: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.pdctname{
+
+}
+
+.pdctshortdescription{
+    font-weight: 100;
+}
+
+.pdctprice{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pdctprice h1{
+    color: var(--red);
+}
+
+.pdctprice p{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.pdctbuy{
+    width: 100%;
+    margin-top: auto;
+}
+.buybtn{
+    margin: auto;
+    border-radius: 15px;
+    background: var(--red);
+    text-align: center;
+    padding: 7px 10px;
+}
+.pdctbuy a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*-----------*/
+
+
+/*tabs*/
+.accordion {
+background: #f9f9f9;
+}
+.accordion-tabs {
+display: none;
+}
+.accordion-tabs :focus {
+outline: none;
+}
+
+.accordion-item:last-child {
+border: none;
+}
+.accordion-item__label {
+margin: 0;
+padding: 1.25rem;
+cursor: pointer;
+transition: padding 0.2s ease;
+position: relative;
+}
+.accordion-item__label:after {
+content: "";
+height: 4px;
+width: 4px;
+position: absolute;
+top: -4px;
+right: 1.25rem;
+bottom: 0;
+margin: auto;
+border: 3px solid transparent;
+border-radius: 2px;
+transform: rotate(45deg);
+border-color: transparent #447fff #447fff transparent;
+opacity: 1;
+transition: opacity 0.1s ease;
+}
+.accordion-item__label:hover {
+background: #d3e1ff;
+}
+.accordion-item__container {
+padding: 0 1.25em;
+height: 0;
+overflow: hidden;
+opacity: 0;
+transition: padding 0.2s ease, opacity 0.5s 0.15s ease;
+}
+.accordion-active {
+background: rgba(68, 127, 255, 0.1);
+}
+.accordion-active .accordion-item__label {
+padding-bottom: 0;
+cursor: inherit;
+}
+.accordion-active .accordion-item__label:hover {
+background: none;
+}
+.accordion-active .accordion-item__label:after {
+opacity: 0;
+}
+.accordion-active .accordion-item__container {
+padding: 1.25em;
+height: auto;
+opacity: 1;
+}
+.accordion-active .accordion-item__container p:first-child, .accordion-active .accordion-item__container h1:first-child, .accordion-active .accordion-item__container h2:first-child, .accordion-active .accordion-item__container h3:first-child, .accordion-active .accordion-item__container h4:first-child, .accordion-active .accordion-item__container h5:first-child, .accordion-active .accordion-item__container h6:first-child {
+margin-top: 0;
+}
+.accordion-active .accordion-item__container p:last-child, .accordion-active .accordion-item__container h1:last-child, .accordion-active .accordion-item__container h2:last-child, .accordion-active .accordion-item__container h3:last-child, .accordion-active .accordion-item__container h4:last-child, .accordion-active .accordion-item__container h5:last-child, .accordion-active .accordion-item__container h6:last-child {
+margin-bottom: 0;
+}
+
+
+.accordion-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(68, 127, 255, 0.1);
+}
+.accordion-tabs .accordion-tab {
+    background: rgba(221, 221, 222, 0.811);
+    padding: 10px ;
+    flex: 1;
+    border: none;
+    cursor: pointer;
+    transition: background 0.1s ease;
+}
+.accordion-tabs .accordion-tab:hover {
+    background: rgb(230 230 230 / 92%);
+}
+.accordion-tabs .accordion-tab:last-child {
+    border-right: 0;
+}
+.accordion-tabs .accordion-tab.accordion-active {
+    background: #f9f9f9;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #eaeaea;
+    height: fit-content;
+    padding: 2.4rem;
+    display: none;
+    border: none;
+}
+.accordion-item__label, .accordion-item__container {
+    padding: 0;
+    transition: inherit;
+}
+.accordion-item__label {
+    margin-bottom: 1.5rem;
+}
+.accordion-item.accordion-active {
+    display: block;
+}
+.accordion-item.accordion-active .accordion-item__container {
+    padding: 0;
+}
+
+
+.accordion {
+box-shadow: 0 1em 2em -0.9em rgba(0, 0, 0, 0.7);
+border-radius: 10px;
+overflow: hidden;
+width: 100%;
+max-width: 400px;
+}
+
+.accordion + p {
+color: rgba(255, 255, 255, 0.8);
+font-weight: 300;
+font-size: 0.9rem;
+margin-top: 2rem;
+}
+
+
+#paypal-button-container{
+    margin-top:auto;
+}
+
+.qtty *{
+    width: 44%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.qtty{
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalprice{
+    color: var(--colorsign);
+}
+
+.countdownholder, .tabscontainer{
+    padding: 7em 0 0 0;
+}
+
+form{
+    padding: 5em 0 0 0;
+}
+
+.btns button{
+    cursor: pointer;
+}
+
+/*responsive*/
+@media only screen and (min-width: 750px) {
+    #thanks, .steps{
+        width: 60vw;
+        margin: auto;
+        padding: 3em 0;
+    }
+
+    .steps{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    form, .tabscontainer, .countdownholder{
+        width: 80vw;
+        margin: auto;
+        
+    }
+    .btns{
+        width: 80vw; 
+    }
+    
+    section.form{
+        height: 100vh;
+    }
+    
+    .pdctpre{
+        height: 100vh;
+    }
+    .pdctmain, .pdcdetails{
+        flex: 1;
+    }
+    
+    
+}
+
+/*less than 750*/
+@media only screen and (max-width: 750px) {
+    
+    .thanksholder{
+        width: fit-content;
+        margin: auto;
+    }
+    .icons{
+        padding: 7rem 0;
+    }
+
+
+    .pdctpre{
+    flex-direction: column;
+
+    }
+    .pdctmain{
+    height: 50vh;
+    }
+    
+
+   
+
+
+
+    .pdctimages .active{
+    border: 1px solid #CF052D;
+    }
+
+    .img1{
+    background: url(images/main.png), linear-gradient(0deg, rgba(19, 19, 19, 0.9), rgba(19, 19, 19, 0.9)),url(images/img1.png);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    }
+
+    .img2{
+    background: url(images/img2.png), linear-gradient(0deg, rgba(19, 19, 19, 0.9), rgba(19, 19, 19, 0.9)),url(images/img1.png);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    }
+
+    .pdcdetails div h1, .pdcdetails div p, .pdcdetails div span{
+    text-transform: uppercase;
+    }
+
+
+    .pdcdetails{
+    margin-top: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    }
+    .pdctname{
+
+    }
+
+    .pdctshortdescription{
+    font-weight: 100;
+    }
+
+    .pdctprice{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+    .pdctprice h1{
+    color: var(--red);
+    }
+
+    .pdctprice p{
+    text-decoration: line-through;
+    color: gray;
+    }
+
+    .pdctbuy{
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    }
+    .buybtn{
+    margin: auto;
+    border-radius: 15px;
+    background: var(--red);
+    text-align: center;
+    padding: 7px 10px;
+    }
+    .pdctbuy a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    }
+    .accordion {
+        max-width: 600px;
+    }
+    ul.steps{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+}
+/*end phoneview*/
+
+/*form*/
+form{
+    display: flex;
+    flex-direction: column; 
+    gap: 2em;
+}
+form select, form input{
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+ 
+.btns{
+        margin: auto;
+        padding: 3em 0;
+}
+
+.btns button{
+    padding: 5px;
+    background: var(--red);
+    outline: none;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+#submit{
+    background: black;
+    color: gray;
+    padding: 1.25em;
+    margin-top: 6px;
+    text-align: center;
+    border: none;
+}
+
+.namecontrol, .phonecontrol, .emailcontrol{
+    position: relative;
+}
+
+i.check{
+    position: absolute;
+}
+
+/*thanku page*/
+
+.thanksholder h1{
+    text-align: center;
+}
+
+.icons, .icons p{
+    text-align: center;
+}
+
+i.icon-thumbs-up{
+    font-size: 5em;
+    color: var(--red);
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+}
+ul.steps{
+    list-style: none;
+    display: flex;
+}
+
+
+
+
+ul.steps li i{
+    font-size: 5em;
+    padding: 10px;
+}
+
+ul.steps li p:nth-child(3){
+    color: gray;
+
+}
+
+/*countdown*/
+
+
+
+.countdown{
+    direction: ltr;
+    display: flex;
+    justify-content: flex-end;
+}
+
+    
+.countdown div{
+    padding: 15px 0 0 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
